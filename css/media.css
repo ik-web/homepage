@@ -5,6 +5,10 @@
     .page:hover {
         box-shadow: none;
     }
+    .about__item-languages {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -24,5 +28,18 @@
     }
     .social__item:hover {
         transform: scale(1);
+    }
+
+    .about__column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .main {
+        padding: 0;
+    }
+    .about__column {
+        padding: 0 15px;
     }
 }
