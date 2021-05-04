@@ -27,12 +27,16 @@ body {
     background-size: cover;
 }
 
+li {
+    list-style: none;
+}
+
 /* Page's styles 
 ------------------------------ */
 .main {padding: 25px 15px;}
 
 .page {
-    max-width: 1020px;
+    max-width: 1200px;
     margin: 0 auto;
     border: 5px solid #aa0606;
     background: rgba(255, 255, 255, 0.8);
@@ -49,7 +53,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 25px;
+    padding: 25px 20px;
 }
 
 .user-info,
@@ -100,3 +104,63 @@ body {
 .facebook {color: #2323e2;}
 .instagram {color: #c414c4;}
 .twitter {color: #0993b6;}
+
+/* About-block styles 
+------------------------------ */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}
+
+.about__column {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.about__item {
+    margin-bottom: 15px;
+    padding: 25px 15px;
+    border-radius: 10px;
+    background: rgba(180, 180, 180, 0.3);
+}
+
+.about__item:last-child {
+    border-bottom: none;
+}
+
+.about__item-title {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #aa0606;
+    text-transform: uppercase;
+    transition: color .15s linear;
+}
+
+.about__item-description li {
+    margin-top: 20px;
+}
+
+.about__item-languages {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.about__item-languages li {
+    padding: 5px 0 5px 30px;
+}
+
+.english {
+    background: url('../img/english-logo.png') left center / contain no-repeat;
+}
+
+.mandarin {
+    background: url('../img/mandarin-logo.png') left center / contain no-repeat;
+}
+
+.japanese {
+    background: url('../img/japanese-logo.png') left center / contain no-repeat;
+}
