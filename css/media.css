@@ -1,0 +1,45 @@
+@media (max-width: 991px) {
+    .main {
+        padding: 15px;
+    }
+    .page:hover {
+        box-shadow: none;
+    }
+    .about__item-languages {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-info {
+        width: 100%;
+        order: 2;
+    }
+    .intro__photo {
+        width: 100%;
+        order: 1;
+    }
+    .socials {
+        justify-content: space-between;
+    }
+    .social__icon {
+        font-size: 35px;
+    }
+    .social__item:hover {
+        transform: scale(1);
+    }
+
+    .about__column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .main {
+        padding: 0;
+    }
+    .about__column {
+        padding: 0 15px;
+    }
+}
